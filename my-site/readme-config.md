@@ -25,6 +25,13 @@ _in case of error_
 
 ```chmod 777 ./storage ``` 
 
+### Application key & Optimize
+
+```
+docker-compose exec app php artisan key:generate
+docker-compose exec app php artisan optimize
+```
+
 
 ---
 
