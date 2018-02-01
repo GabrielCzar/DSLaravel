@@ -48,3 +48,8 @@ Route::get('sendemail', function () {
 
 // Posts
 Route::post('/comment', 'CommentsController@newComment');
+
+// Register
+Route::get('users/register', 'Auth\RegisterController@showRegistrationForm');
+Route::post('users/register', 'Auth\RegisterController@register');
+
